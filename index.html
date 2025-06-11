@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Chengath | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+  <style>
+    :root {
+      --primary: #1e1e2f;
+      --secondary: #4ecca3;
+      --bg: #f5f5f5;
+      --text: #333;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: url('mitchell-luo-FWoq_ldWlNQ-unsplash (1).jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+      position: relative;
+    }
+    /* header img.profile {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    } */
+
+    header img.profile {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 4px solid white;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    header img.profile:hover {
+        transform: scale(1.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 50px;
+      height: 4px;
+      background: var(--secondary);
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .contact a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--secondary);
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="profile" src="5d62e142-6888-4c8a-9ff6-f64512ffecd6.jpeg" alt="Arjun Chengath">
+    <h1>Arjun Chengath</h1>
+    <p>AWS Developer | Salesforce Integration Developer</p>
+  </header>
+
+  <section class="card" id="summary">
+    <h2 class="section-title">Professional Summary</h2>
+    <p>Currently working at Accenture as Application developer with 2+ years experience in Salesforce integration, AWS services, Terraform IaC, and Selenium test automation. Adept at building AWS Lambda-based architectures and CI/CD pipelines using GitHub Flow.</p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+      <a href="tel:+919975401980">📞 9975401980</a>
+      <a href="mailto:arjunchengath77@gmail.com">✉️ arjunchengath77@gmail.com</a>
+      <a href="https://www.linkedin.com/in/arjun-chengath-55a848200" target="_blank">🔗 LinkedIn Profile</a>
+      <p>📍 Kanjurmarg West, Mumbai</p>
+    </div>
+  </section>
+
+  <section class="card" id="experience">
+    <h2 class="section-title">Work Experience</h2>
+    <h3>Accenture (2022 – Present)</h3>
+    <h3>AWS Developer | Salesforce Integration Developer</h3>
+    <ul>
+      <li>Integrated Salesforce with vendors using AWS services (Lambda, API Gateway, S3).</li>
+      <li>Transformed JSON for bidirectional flow with Salesforce.</li>
+      <li>Infrastructure automation using Terraform.</li>
+      <li>Built CI/CD pipelines via GitHub Flow.</li>
+    </ul>
+    <h3>Automation Engineer (Selenium)</h3>
+    <ul>
+      <li>Built Java Selenium reusable functions for test automation.</li>
+      <li>Improved script performance and coverage.</li>
+      <li>Worked with Apex triggers in Salesforce.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="skills">
+    <h2 class="section-title">Technologies</h2>
+    <p>AWS (Lambda, API Gateway, S3, Step Function, EventBridge, SQS), Terraform, Python, Selenium (Java), Salesforce (Apex, SOQL)</p>
+  </section>
+
+  <section class="card" id="education">
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li>MCA – DY Patil University (2022–2024)</li>
+      <li>B.Sc. IT – CHM College (2019–2022)</li>
+    </ul>
+  </section>
+
+  <section class="card" id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <ul>
+      <li>Salesforce AI Associate Certificate</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Arjun Chengath | Made with ❤️ and clean code.
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.card', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '30px',
+      easing: 'ease-in-out',
+      interval: 100
+    });
+  </script>
+
+</body>
+</html>
